@@ -1,0 +1,295 @@
+--- !ruby/object:Puppet::Transaction::Report
+metrics:
+  resources: !ruby/object:Puppet::Util::Metric
+    name: resources
+    label: Resources
+    values:
+    - - total
+      - Total
+      - 8
+    - - skipped
+      - Skipped
+      - 0
+    - - failed
+      - Failed
+      - 0
+    - - failed_to_restart
+      - Failed to restart
+      - 0
+    - - restarted
+      - Restarted
+      - 0
+    - - changed
+      - Changed
+      - 1
+    - - out_of_sync
+      - Out of sync
+      - 1
+    - - scheduled
+      - Scheduled
+      - 0
+    - - corrective_change
+      - Corrective change
+      - 0
+  time: !ruby/object:Puppet::Util::Metric
+    name: time
+    label: Time
+    values:
+    - - exec
+      - Exec
+      - 0.006572792
+    - - schedule
+      - Schedule
+      - 0.0006539320000000001
+    - - filebucket
+      - Filebucket
+      - 8.6975e-05
+    - - config_retrieval
+      - Config retrieval
+      - 0.168099836
+    - - total
+      - Total
+      - 0.175413535
+  changes: !ruby/object:Puppet::Util::Metric
+    name: changes
+    label: Changes
+    values:
+    - - total
+      - Total
+      - 1
+  events: !ruby/object:Puppet::Util::Metric
+    name: events
+    label: Events
+    values:
+    - - total
+      - Total
+      - 1
+    - - failure
+      - Failure
+      - 0
+    - - success
+      - Success
+      - 1
+logs:
+- !ruby/object:Puppet::Util::Log
+  level: :notice
+  message: executed successfully
+  source: "/Stage[main]/Main/Exec[echo-holy-cow]/returns"
+  tags:
+  - notice
+  - exec
+  - echo-holy-cow
+  - class
+  time: '2017-08-08T00:16:59.834458810+00:00'
+  file: "/vagrant/manifests/test/exe.pp"
+  line: 1
+- !ruby/object:Puppet::Util::Log
+  level: :notice
+  message: Applied catalog in 0.03 seconds
+  source: Puppet
+  tags:
+  - notice
+  time: '2017-08-08T00:16:59.851139241+00:00'
+  file: 
+  line: 
+resource_statuses:
+  Exec[echo-holy-cow]: !ruby/object:Puppet::Resource::Status
+    title: echo-holy-cow
+    file: "/vagrant/manifests/test/exe.pp"
+    line: 1
+    resource: Exec[echo-holy-cow]
+    resource_type: Exec
+    containment_path:
+    - Stage[main]
+    - Main
+    - Exec[echo-holy-cow]
+    evaluation_time: 0.006572792
+    tags:
+    - exec
+    - echo-holy-cow
+    - class
+    time: '2017-08-08T00:16:59.828578319+00:00'
+    failed: false
+    changed: true
+    out_of_sync: true
+    skipped: false
+    change_count: 1
+    out_of_sync_count: 1
+    events:
+    - !ruby/object:Puppet::Transaction::Event
+      audited: false
+      property: returns
+      previous_value: :notrun
+      desired_value:
+      - '0'
+      historical_value: 
+      message: executed successfully
+      name: :executed_command
+      status: success
+      time: 2017-08-08 00:16:59.828851870 +00:00
+      redacted: 
+      corrective_change: false
+    corrective_change: false
+  Schedule[puppet]: !ruby/object:Puppet::Resource::Status
+    title: puppet
+    file: 
+    line: 
+    resource: Schedule[puppet]
+    resource_type: Schedule
+    containment_path:
+    - Schedule[puppet]
+    evaluation_time: 0.000249883
+    tags:
+    - schedule
+    - puppet
+    time: '2017-08-08T00:16:59.837371364+00:00'
+    failed: false
+    changed: false
+    out_of_sync: false
+    skipped: false
+    change_count: 0
+    out_of_sync_count: 0
+    events: []
+    corrective_change: false
+  Schedule[hourly]: !ruby/object:Puppet::Resource::Status
+    title: hourly
+    file: 
+    line: 
+    resource: Schedule[hourly]
+    resource_type: Schedule
+    containment_path:
+    - Schedule[hourly]
+    evaluation_time: 0.000169462
+    tags:
+    - schedule
+    - hourly
+    time: '2017-08-08T00:16:59.837971512+00:00'
+    failed: false
+    changed: false
+    out_of_sync: false
+    skipped: false
+    change_count: 0
+    out_of_sync_count: 0
+    events: []
+    corrective_change: false
+  Schedule[daily]: !ruby/object:Puppet::Resource::Status
+    title: daily
+    file: 
+    line: 
+    resource: Schedule[daily]
+    resource_type: Schedule
+    containment_path:
+    - Schedule[daily]
+    evaluation_time: 6.9061e-05
+    tags:
+    - schedule
+    - daily
+    time: '2017-08-08T00:16:59.838293764+00:00'
+    failed: false
+    changed: false
+    out_of_sync: false
+    skipped: false
+    change_count: 0
+    out_of_sync_count: 0
+    events: []
+    corrective_change: false
+  Schedule[weekly]: !ruby/object:Puppet::Resource::Status
+    title: weekly
+    file: 
+    line: 
+    resource: Schedule[weekly]
+    resource_type: Schedule
+    containment_path:
+    - Schedule[weekly]
+    evaluation_time: 5.0294e-05
+    tags:
+    - schedule
+    - weekly
+    time: '2017-08-08T00:16:59.838496639+00:00'
+    failed: false
+    changed: false
+    out_of_sync: false
+    skipped: false
+    change_count: 0
+    out_of_sync_count: 0
+    events: []
+    corrective_change: false
+  Schedule[monthly]: !ruby/object:Puppet::Resource::Status
+    title: monthly
+    file: 
+    line: 
+    resource: Schedule[monthly]
+    resource_type: Schedule
+    containment_path:
+    - Schedule[monthly]
+    evaluation_time: 6.7065e-05
+    tags:
+    - schedule
+    - monthly
+    time: '2017-08-08T00:16:59.838707277+00:00'
+    failed: false
+    changed: false
+    out_of_sync: false
+    skipped: false
+    change_count: 0
+    out_of_sync_count: 0
+    events: []
+    corrective_change: false
+  Schedule[never]: !ruby/object:Puppet::Resource::Status
+    title: never
+    file: 
+    line: 
+    resource: Schedule[never]
+    resource_type: Schedule
+    containment_path:
+    - Schedule[never]
+    evaluation_time: 4.8167e-05
+    tags:
+    - schedule
+    - never
+    time: '2017-08-08T00:16:59.838930775+00:00'
+    failed: false
+    changed: false
+    out_of_sync: false
+    skipped: false
+    change_count: 0
+    out_of_sync_count: 0
+    events: []
+    corrective_change: false
+  Filebucket[puppet]: !ruby/object:Puppet::Resource::Status
+    title: puppet
+    file: 
+    line: 
+    resource: Filebucket[puppet]
+    resource_type: Filebucket
+    containment_path:
+    - Filebucket[puppet]
+    evaluation_time: 8.6975e-05
+    tags:
+    - filebucket
+    - puppet
+    time: '2017-08-08T00:16:59.839133344+00:00'
+    failed: false
+    changed: false
+    out_of_sync: false
+    skipped: false
+    change_count: 0
+    out_of_sync_count: 0
+    events: []
+    corrective_change: false
+host: client.example.com
+time: 2017-08-08 00:16:59.820936401 +00:00
+kind: apply
+report_format: 6
+puppet_version: 4.10.5
+configuration_version: 1502151419
+transaction_uuid: 04212aa6-b1fb-474e-bdbc-2049875edaf7
+code_id: 
+catalog_uuid: e7ae2f3e-106c-45fc-ade6-4429a44c338f
+cached_catalog_status: not_used
+master_used: 
+environment: production
+status: changed
+noop: false
+noop_pending: false
+corrective_change: false

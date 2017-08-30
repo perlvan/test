@@ -1,0 +1,90 @@
+--- !ruby/object:Puppet::Transaction::Report
+metrics:
+  resources: !ruby/object:Puppet::Util::Metric
+    name: resources
+    label: Resources
+    values:
+    - - total
+      - Total
+      - 0
+    - - skipped
+      - Skipped
+      - 0
+    - - failed
+      - Failed
+      - 0
+    - - failed_to_restart
+      - Failed to restart
+      - 0
+    - - restarted
+      - Restarted
+      - 0
+    - - changed
+      - Changed
+      - 0
+    - - out_of_sync
+      - Out of sync
+      - 0
+    - - scheduled
+      - Scheduled
+      - 0
+    - - corrective_change
+      - Corrective change
+      - 0
+  time: !ruby/object:Puppet::Util::Metric
+    name: time
+    label: Time
+    values:
+    - - config_retrieval
+      - Config retrieval
+      - 0.184836454
+    - - total
+      - Total
+      - 0.184836454
+  changes: !ruby/object:Puppet::Util::Metric
+    name: changes
+    label: Changes
+    values:
+    - - total
+      - Total
+      - 0
+  events: !ruby/object:Puppet::Util::Metric
+    name: events
+    label: Events
+    values:
+    - - total
+      - Total
+      - 0
+    - - failure
+      - Failure
+      - 0
+    - - success
+      - Success
+      - 0
+logs:
+- !ruby/object:Puppet::Util::Log
+  level: :err
+  message: 'Failed to apply catalog: The yum provider can only be used as root'
+  source: Puppet
+  tags:
+  - err
+  time: '2017-08-28T07:42:32.913451174+00:00'
+  file: 
+  line: 
+resource_statuses: {}
+host: client.example.com
+time: 2017-08-28 07:42:32.877808825 +00:00
+kind: apply
+report_format: 6
+puppet_version: 4.10.5
+configuration_version: 1503906152
+transaction_uuid: 9e9e326c-cb4d-4947-a601-05e2751ff382
+code_id: 
+catalog_uuid: bb246114-8cd2-4f70-b735-043ac61c82c5
+cached_catalog_status: not_used
+master_used: 
+environment: production
+status: unchanged
+noop: true
+noop_pending: false
+corrective_change: false

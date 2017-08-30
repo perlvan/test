@@ -1,0 +1,20 @@
+---
+resources:
+  Cron[puppet-apply]:
+    parameters:
+      ensure:
+        system_value:
+        - :present
+      command:
+        system_value:
+        - "/opt/puppet/bin/puppet apply /etc/puppetlabs/puppet/manifests --logdest
+          syslog"
+      minute:
+        system_value:
+        - '30'
+      user:
+        system_value:
+        - root
+      target:
+        system_value:
+        - root

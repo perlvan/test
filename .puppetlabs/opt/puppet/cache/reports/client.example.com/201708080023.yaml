@@ -1,0 +1,270 @@
+--- !ruby/object:Puppet::Transaction::Report
+metrics:
+  resources: !ruby/object:Puppet::Util::Metric
+    name: resources
+    label: Resources
+    values:
+    - - total
+      - Total
+      - 8
+    - - skipped
+      - Skipped
+      - 0
+    - - failed
+      - Failed
+      - 0
+    - - failed_to_restart
+      - Failed to restart
+      - 0
+    - - restarted
+      - Restarted
+      - 0
+    - - changed
+      - Changed
+      - 0
+    - - out_of_sync
+      - Out of sync
+      - 0
+    - - scheduled
+      - Scheduled
+      - 0
+    - - corrective_change
+      - Corrective change
+      - 0
+  time: !ruby/object:Puppet::Util::Metric
+    name: time
+    label: Time
+    values:
+    - - exec
+      - Exec
+      - 0.000172772
+    - - schedule
+      - Schedule
+      - 0.000278167
+    - - filebucket
+      - Filebucket
+      - 5.999e-05
+    - - config_retrieval
+      - Config retrieval
+      - 0.17480398
+    - - total
+      - Total
+      - 0.175314909
+  changes: !ruby/object:Puppet::Util::Metric
+    name: changes
+    label: Changes
+    values:
+    - - total
+      - Total
+      - 0
+  events: !ruby/object:Puppet::Util::Metric
+    name: events
+    label: Events
+    values:
+    - - total
+      - Total
+      - 0
+    - - failure
+      - Failure
+      - 0
+    - - success
+      - Success
+      - 0
+logs:
+- !ruby/object:Puppet::Util::Log
+  level: :notice
+  message: Applied catalog in 0.02 seconds
+  source: Puppet
+  tags:
+  - notice
+  time: '2017-08-08T00:23:30.004522672+00:00'
+  file: 
+  line: 
+resource_statuses:
+  Exec[echo-holy-cow]: !ruby/object:Puppet::Resource::Status
+    title: echo-holy-cow
+    file: "/vagrant/manifests/test/exe.pp"
+    line: 1
+    resource: Exec[echo-holy-cow]
+    resource_type: Exec
+    containment_path:
+    - Stage[main]
+    - Main
+    - Exec[echo-holy-cow]
+    evaluation_time: 0.000172772
+    tags:
+    - exec
+    - echo-holy-cow
+    - class
+    time: '2017-08-08T00:23:29.993555051+00:00'
+    failed: false
+    changed: false
+    out_of_sync: false
+    skipped: false
+    change_count: 0
+    out_of_sync_count: 0
+    events: []
+    corrective_change: false
+  Schedule[puppet]: !ruby/object:Puppet::Resource::Status
+    title: puppet
+    file: 
+    line: 
+    resource: Schedule[puppet]
+    resource_type: Schedule
+    containment_path:
+    - Schedule[puppet]
+    evaluation_time: 6.4337e-05
+    tags:
+    - schedule
+    - puppet
+    time: '2017-08-08T00:23:29.994082075+00:00'
+    failed: false
+    changed: false
+    out_of_sync: false
+    skipped: false
+    change_count: 0
+    out_of_sync_count: 0
+    events: []
+    corrective_change: false
+  Schedule[hourly]: !ruby/object:Puppet::Resource::Status
+    title: hourly
+    file: 
+    line: 
+    resource: Schedule[hourly]
+    resource_type: Schedule
+    containment_path:
+    - Schedule[hourly]
+    evaluation_time: 6.0712e-05
+    tags:
+    - schedule
+    - hourly
+    time: '2017-08-08T00:23:29.994219054+00:00'
+    failed: false
+    changed: false
+    out_of_sync: false
+    skipped: false
+    change_count: 0
+    out_of_sync_count: 0
+    events: []
+    corrective_change: false
+  Schedule[daily]: !ruby/object:Puppet::Resource::Status
+    title: daily
+    file: 
+    line: 
+    resource: Schedule[daily]
+    resource_type: Schedule
+    containment_path:
+    - Schedule[daily]
+    evaluation_time: 3.5579e-05
+    tags:
+    - schedule
+    - daily
+    time: '2017-08-08T00:23:29.994343866+00:00'
+    failed: false
+    changed: false
+    out_of_sync: false
+    skipped: false
+    change_count: 0
+    out_of_sync_count: 0
+    events: []
+    corrective_change: false
+  Schedule[weekly]: !ruby/object:Puppet::Resource::Status
+    title: weekly
+    file: 
+    line: 
+    resource: Schedule[weekly]
+    resource_type: Schedule
+    containment_path:
+    - Schedule[weekly]
+    evaluation_time: 4.7415e-05
+    tags:
+    - schedule
+    - weekly
+    time: '2017-08-08T00:23:29.994440003+00:00'
+    failed: false
+    changed: false
+    out_of_sync: false
+    skipped: false
+    change_count: 0
+    out_of_sync_count: 0
+    events: []
+    corrective_change: false
+  Schedule[monthly]: !ruby/object:Puppet::Resource::Status
+    title: monthly
+    file: 
+    line: 
+    resource: Schedule[monthly]
+    resource_type: Schedule
+    containment_path:
+    - Schedule[monthly]
+    evaluation_time: 3.5201e-05
+    tags:
+    - schedule
+    - monthly
+    time: '2017-08-08T00:23:29.994549077+00:00'
+    failed: false
+    changed: false
+    out_of_sync: false
+    skipped: false
+    change_count: 0
+    out_of_sync_count: 0
+    events: []
+    corrective_change: false
+  Schedule[never]: !ruby/object:Puppet::Resource::Status
+    title: never
+    file: 
+    line: 
+    resource: Schedule[never]
+    resource_type: Schedule
+    containment_path:
+    - Schedule[never]
+    evaluation_time: 3.4923e-05
+    tags:
+    - schedule
+    - never
+    time: '2017-08-08T00:23:29.994663807+00:00'
+    failed: false
+    changed: false
+    out_of_sync: false
+    skipped: false
+    change_count: 0
+    out_of_sync_count: 0
+    events: []
+    corrective_change: false
+  Filebucket[puppet]: !ruby/object:Puppet::Resource::Status
+    title: puppet
+    file: 
+    line: 
+    resource: Filebucket[puppet]
+    resource_type: Filebucket
+    containment_path:
+    - Filebucket[puppet]
+    evaluation_time: 5.999e-05
+    tags:
+    - filebucket
+    - puppet
+    time: '2017-08-08T00:23:29.994794987+00:00'
+    failed: false
+    changed: false
+    out_of_sync: false
+    skipped: false
+    change_count: 0
+    out_of_sync_count: 0
+    events: []
+    corrective_change: false
+host: client.example.com
+time: 2017-08-08 00:23:29.985270313 +00:00
+kind: apply
+report_format: 6
+puppet_version: 4.10.5
+configuration_version: 1502151809
+transaction_uuid: 95ef3af9-c64f-408a-9af6-0f02dc6a4a92
+code_id: 
+catalog_uuid: 04035a6f-57ec-455a-8941-6f8a7b2eeed3
+cached_catalog_status: not_used
+master_used: 
+environment: production
+status: unchanged
+noop: false
+noop_pending: false
+corrective_change: false

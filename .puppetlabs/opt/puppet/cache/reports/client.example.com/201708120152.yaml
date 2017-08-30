@@ -1,0 +1,243 @@
+--- !ruby/object:Puppet::Transaction::Report
+metrics:
+  resources: !ruby/object:Puppet::Util::Metric
+    name: resources
+    label: Resources
+    values:
+    - - total
+      - Total
+      - 7
+    - - skipped
+      - Skipped
+      - 0
+    - - failed
+      - Failed
+      - 0
+    - - failed_to_restart
+      - Failed to restart
+      - 0
+    - - restarted
+      - Restarted
+      - 0
+    - - changed
+      - Changed
+      - 0
+    - - out_of_sync
+      - Out of sync
+      - 0
+    - - scheduled
+      - Scheduled
+      - 0
+    - - corrective_change
+      - Corrective change
+      - 0
+  time: !ruby/object:Puppet::Util::Metric
+    name: time
+    label: Time
+    values:
+    - - schedule
+      - Schedule
+      - 0.00024702000000000003
+    - - filebucket
+      - Filebucket
+      - 5.7211e-05
+    - - config_retrieval
+      - Config retrieval
+      - 0.124230324
+    - - total
+      - Total
+      - 0.124534555
+  changes: !ruby/object:Puppet::Util::Metric
+    name: changes
+    label: Changes
+    values:
+    - - total
+      - Total
+      - 0
+  events: !ruby/object:Puppet::Util::Metric
+    name: events
+    label: Events
+    values:
+    - - total
+      - Total
+      - 0
+    - - failure
+      - Failure
+      - 0
+    - - success
+      - Success
+      - 0
+logs:
+- !ruby/object:Puppet::Util::Log
+  level: :notice
+  message: Applied catalog in 0.02 seconds
+  source: Puppet
+  tags:
+  - notice
+  time: '2017-08-12T01:52:46.041752080+00:00'
+  file: 
+  line: 
+resource_statuses:
+  Schedule[puppet]: !ruby/object:Puppet::Resource::Status
+    title: puppet
+    file: 
+    line: 
+    resource: Schedule[puppet]
+    resource_type: Schedule
+    containment_path:
+    - Schedule[puppet]
+    evaluation_time: 6.2883e-05
+    tags:
+    - schedule
+    - puppet
+    time: '2017-08-12T01:52:46.031154661+00:00'
+    failed: false
+    changed: false
+    out_of_sync: false
+    skipped: false
+    change_count: 0
+    out_of_sync_count: 0
+    events: []
+    corrective_change: false
+  Schedule[hourly]: !ruby/object:Puppet::Resource::Status
+    title: hourly
+    file: 
+    line: 
+    resource: Schedule[hourly]
+    resource_type: Schedule
+    containment_path:
+    - Schedule[hourly]
+    evaluation_time: 3.805e-05
+    tags:
+    - schedule
+    - hourly
+    time: '2017-08-12T01:52:46.031301695+00:00'
+    failed: false
+    changed: false
+    out_of_sync: false
+    skipped: false
+    change_count: 0
+    out_of_sync_count: 0
+    events: []
+    corrective_change: false
+  Schedule[daily]: !ruby/object:Puppet::Resource::Status
+    title: daily
+    file: 
+    line: 
+    resource: Schedule[daily]
+    resource_type: Schedule
+    containment_path:
+    - Schedule[daily]
+    evaluation_time: 4.9942e-05
+    tags:
+    - schedule
+    - daily
+    time: '2017-08-12T01:52:46.031400829+00:00'
+    failed: false
+    changed: false
+    out_of_sync: false
+    skipped: false
+    change_count: 0
+    out_of_sync_count: 0
+    events: []
+    corrective_change: false
+  Schedule[weekly]: !ruby/object:Puppet::Resource::Status
+    title: weekly
+    file: 
+    line: 
+    resource: Schedule[weekly]
+    resource_type: Schedule
+    containment_path:
+    - Schedule[weekly]
+    evaluation_time: 3.2378e-05
+    tags:
+    - schedule
+    - weekly
+    time: '2017-08-12T01:52:46.031509171+00:00'
+    failed: false
+    changed: false
+    out_of_sync: false
+    skipped: false
+    change_count: 0
+    out_of_sync_count: 0
+    events: []
+    corrective_change: false
+  Schedule[monthly]: !ruby/object:Puppet::Resource::Status
+    title: monthly
+    file: 
+    line: 
+    resource: Schedule[monthly]
+    resource_type: Schedule
+    containment_path:
+    - Schedule[monthly]
+    evaluation_time: 3.2328e-05
+    tags:
+    - schedule
+    - monthly
+    time: '2017-08-12T01:52:46.031614322+00:00'
+    failed: false
+    changed: false
+    out_of_sync: false
+    skipped: false
+    change_count: 0
+    out_of_sync_count: 0
+    events: []
+    corrective_change: false
+  Schedule[never]: !ruby/object:Puppet::Resource::Status
+    title: never
+    file: 
+    line: 
+    resource: Schedule[never]
+    resource_type: Schedule
+    containment_path:
+    - Schedule[never]
+    evaluation_time: 3.1439e-05
+    tags:
+    - schedule
+    - never
+    time: '2017-08-12T01:52:46.031717343+00:00'
+    failed: false
+    changed: false
+    out_of_sync: false
+    skipped: false
+    change_count: 0
+    out_of_sync_count: 0
+    events: []
+    corrective_change: false
+  Filebucket[puppet]: !ruby/object:Puppet::Resource::Status
+    title: puppet
+    file: 
+    line: 
+    resource: Filebucket[puppet]
+    resource_type: Filebucket
+    containment_path:
+    - Filebucket[puppet]
+    evaluation_time: 5.7211e-05
+    tags:
+    - filebucket
+    - puppet
+    time: '2017-08-12T01:52:46.031854582+00:00'
+    failed: false
+    changed: false
+    out_of_sync: false
+    skipped: false
+    change_count: 0
+    out_of_sync_count: 0
+    events: []
+    corrective_change: false
+host: client.example.com
+time: 2017-08-12 01:52:46.023446701 +00:00
+kind: apply
+report_format: 6
+puppet_version: 4.10.5
+configuration_version: 1502502765
+transaction_uuid: 544d4bfe-4ba1-4b25-9135-6b0df397c6f0
+code_id: 
+catalog_uuid: 14a14dd2-e6cb-4c66-b4a2-0b71f5e7bfeb
+cached_catalog_status: not_used
+master_used: 
+environment: production
+status: unchanged
+noop: false
+noop_pending: false
+corrective_change: false

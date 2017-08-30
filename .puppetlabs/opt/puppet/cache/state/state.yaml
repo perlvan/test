@@ -1,0 +1,105 @@
+---
+File[/etc/puppetlabs/puppet]:
+  :checked: 2017-08-06 22:45:15.643972629 +00:00
+File[/etc/puppetlabs/code]:
+  :checked: 2017-08-06 22:45:15.644279566 +00:00
+File[/home/vagrant/.puppetlabs/opt/puppet/cache]:
+  :checked: 2017-08-06 22:45:15.644519375 +00:00
+File[/home/vagrant/.puppetlabs/var/log]:
+  :checked: 2017-08-06 22:45:15.644836612 +00:00
+File[/home/vagrant/.puppetlabs/opt/puppet/cache/state]:
+  :checked: 2017-08-06 22:45:15.645272495 +00:00
+File[/home/vagrant/.puppetlabs/var/run]:
+  :checked: 2017-08-06 22:45:15.645565689 +00:00
+File[/home/vagrant/.puppetlabs/opt/puppet/cache/lib]:
+  :checked: 2017-08-06 22:45:15.645825232 +00:00
+File[/etc/puppetlabs/puppet/hiera.yaml]:
+  :checked: 2017-08-06 22:45:15.646042721 +00:00
+File[/home/vagrant/.puppetlabs/opt/puppet/cache/preview]:
+  :checked: 2017-08-06 22:45:15.646277707 +00:00
+File[/etc/puppetlabs/puppet/ssl]:
+  :checked: 2017-08-06 22:45:15.646562474 +00:00
+  :synced: 2017-08-06 22:45:15.646925377 +00:00
+File[/etc/puppetlabs/puppet/ssl/certs]:
+  :checked: 2017-08-06 22:45:15.647260456 +00:00
+  :synced: 2017-08-06 22:45:15.647482452 +00:00
+File[/etc/puppetlabs/puppet/ssl/public_keys]:
+  :checked: 2017-08-06 22:45:15.647740820 +00:00
+  :synced: 2017-08-06 22:45:15.647960813 +00:00
+File[/etc/puppetlabs/puppet/ssl/certificate_requests]:
+  :checked: 2017-08-06 22:45:15.648216667 +00:00
+  :synced: 2017-08-06 22:45:15.648437080 +00:00
+File[/etc/puppetlabs/puppet/ssl/private_keys]:
+  :checked: 2017-08-06 22:45:15.648691545 +00:00
+  :synced: 2017-08-06 22:45:15.648909869 +00:00
+File[/etc/puppetlabs/puppet/ssl/private]:
+  :checked: 2017-08-06 22:45:15.649163903 +00:00
+  :synced: 2017-08-06 22:45:15.649385867 +00:00
+File[/home/vagrant/.puppetlabs/opt/puppet/cache/client_yaml]:
+  :checked: 2017-08-06 22:45:15.649641223 +00:00
+File[/home/vagrant/.puppetlabs/opt/puppet/cache/client_data]:
+  :checked: 2017-08-06 22:45:15.650046626 +00:00
+File[/home/vagrant/.puppetlabs/opt/puppet/cache/clientbucket]:
+  :checked: 2017-08-06 22:45:15.650404807 +00:00
+File[/home/vagrant/.puppetlabs/opt/puppet/cache/state/graphs]:
+  :checked: 2017-08-06 22:45:15.650671082 +00:00
+File[/home/vagrant/.puppetlabs/opt/puppet/cache/facts.d]:
+  :checked: 2017-08-06 22:45:15.650961481 +00:00
+File[/etc/puppetlabs/code/environments/production]:
+  :checked: 2017-08-06 22:45:15.651217799 +00:00
+:configuration: {}
+Stage[main]:
+  :checked: 2017-08-28 07:42:32.902225678 +00:00
+Class[Settings]:
+  :checked: 2017-08-28 07:42:32.902612427 +00:00
+Class[Main]:
+  :checked: 2017-08-28 07:42:32.902767600 +00:00
+Notify[greeting]:
+  :checked: 2017-08-12 01:51:53.157430289 +00:00
+  :synced: 2017-08-12 01:51:53.157844723 +00:00
+Schedule[puppet]:
+  :checked: 2017-08-22 12:47:51.122240508 +00:00
+Schedule[hourly]:
+  :checked: 2017-08-22 12:47:51.122350146 +00:00
+Schedule[daily]:
+  :checked: 2017-08-22 12:47:51.122459223 +00:00
+Schedule[weekly]:
+  :checked: 2017-08-22 12:47:51.122562049 +00:00
+Schedule[monthly]:
+  :checked: 2017-08-22 12:47:51.122674028 +00:00
+Schedule[never]:
+  :checked: 2017-08-22 12:47:51.122786319 +00:00
+Filebucket[puppet]:
+  :checked: 2017-08-22 12:47:51.122935587 +00:00
+File[my_file]:
+  :checked: 2017-08-07 12:49:21.026407026 +00:00
+  :synced: 2017-08-07 12:49:21.027863220 +00:00
+File[my_file1]:
+  :checked: 2017-08-07 12:49:21.029061217 +00:00
+  :synced: 2017-08-07 12:49:21.030526398 +00:00
+Notify[my_file]:
+  :checked: 2017-08-07 12:49:21.030871842 +00:00
+  :synced: 2017-08-07 12:49:21.031213555 +00:00
+File[/etc/hosts]:
+  :checked: 2017-08-07 23:39:16.205090068 +00:00
+  :content: "{md5}0350f101b01cdcd219ecb3bfd3a28cc0"
+  :owner: 0
+  :group: 0
+Exec[echo-holy-cow]:
+  :checked: 2017-08-08 00:23:29.993701053 +00:00
+  :synced: 2017-08-08 00:16:59.835117337 +00:00
+Service[puppet]:
+  :checked: 2017-08-08 12:55:40.795924737 +00:00
+Class[Other_class]:
+  :checked: 2017-08-12 01:59:06.827987223 +00:00
+Notify[announcement]:
+  :checked: 2017-08-12 01:59:06.826893666 +00:00
+  :synced: 2017-08-12 01:59:06.827662886 +00:00
+Class[My_class]:
+  :checked: 2017-08-12 01:59:06.828371941 +00:00
+Notify[UsingTest]:
+  :checked: 2017-08-22 12:47:51.121198403 +00:00
+  :synced: 2017-08-22 12:47:51.121616639 +00:00
+Cron[puppet-apply]:
+  :checked: 2017-08-22 12:52:58.051686731 +00:00
+  :synced: 2017-08-22 12:52:58.052968532 +00:00
